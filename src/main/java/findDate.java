@@ -14,8 +14,8 @@ public class findDate {
         }
 
         //Bai 2
-        String regex="Hello java regex son@gmail.com, hello world sonnguyen@gmail.com.com";
-        Pattern p = Pattern.compile("\\w+(@{1})gmail(\\.[a-z]{2,}){1,2}");
+        String regex="Hello java regex son@gmail.com, hello world sonnguyen@gmail.com.com, gmail: 01son@gmail.com";
+        Pattern p = Pattern.compile("\\b[a-zA-Z]\\w+(@{1})gmail(\\.[a-z]{2,}){1,2}");
         Matcher m = p.matcher(regex);
 
         System.out.println("Các email có trong chuỗi: " + regex);
